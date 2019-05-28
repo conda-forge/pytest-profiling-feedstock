@@ -10,7 +10,7 @@ source:
   sha256: 93938f147662225d2b8bd5af89587b979652426a8a6ffd7e73ec4a23e24b7f29
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 
@@ -22,7 +22,7 @@ requirements:
     - setuptools-git
   run:
     - gprof2dot
-    - pytest <4.0.0
+    - pytest
     - python
     - setuptools
     - six
