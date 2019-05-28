@@ -1,5 +1,5 @@
 {% set name = "pytest-profiling" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e44f8cddffa68e1b5a99bce64f60e91d7ec28175dc4b6ac57d7c6ac39135ec1f
+  sha256: 93938f147662225d2b8bd5af89587b979652426a8a6ffd7e73ec4a23e24b7f29
 
 build:
   number: 0
