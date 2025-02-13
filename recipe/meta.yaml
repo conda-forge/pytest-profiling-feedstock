@@ -6,33 +6,34 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 93938f147662225d2b8bd5af89587b979652426a8a6ffd7e73ec4a23e24b7f29
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 
 requirements:
   host:
     - pip
-    - python
-    - setuptools
+    - python {{ python_min }}
+    - setuptools <72
     - setuptools-git
   run:
     - gprof2dot
     - pytest
-    - python
-    - setuptools
+    - python >={{ python_min }}
     - six
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pytest_profiling
 
 about:
-  home: https://github.com/manahl/pytest-plugins
+  home: https://github.com/man-group/pytest-plugins
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
