@@ -33,7 +33,7 @@ test:
     - pytest_profiling
 
 about:
-  home: https://github.com/manahl/pytest-plugins
+  home: https://github.com/man-group/pytest-plugins
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt

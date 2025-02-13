@@ -3,7 +3,7 @@ About pytest-profiling-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-profiling-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/manahl/pytest-plugins
+Home: https://github.com/man-group/pytest-plugins
 
 Package license: MIT
 
